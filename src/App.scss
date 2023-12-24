@@ -1,9 +1,60 @@
 .App {
   text-align: center;
 }
+.logo {
+  height: 100%;
+  width: 300px;
+}
 
 .navi {
-  width: 100vw;
+  max-width: 100%;
+  
   height: 100px;
   border: 2px solid red;
+  background-color: #2A2A2A;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1em 0 1em;
+
+  &__logoBox{
+    width: 300px;
+    height: 100%;
+    border: 1px solid blue;
+  }
+
+  &__linksBox {
+    width: 700px;
+    height: 100%;
+    border: 2px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  
+    &__linksList {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+  
+      li {
+        margin-right: 20px; /* Adjust as needed */
+      }
+  
+      a {
+        text-decoration: none;
+        color: lightgray;
+        font-size: 25px;
+        border: 1px solid red;
+        margin: 0 1em 0 1em;
+        transition: 1s;
+  
+        &:hover {
+          color: white;
+          transition: 0.2s;
+        }
+      }
+    }
+  }
+  
 }
